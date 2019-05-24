@@ -4,7 +4,7 @@ import re
 from six import iteritems
 
 from django import template
-from django.core.urlresolvers import resolve
+from django.urls import resolve
 from django.utils.translation import activate, get_language
 register = template.Library()
 
