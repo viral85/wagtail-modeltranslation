@@ -4,13 +4,13 @@ from django.db import models
 from django.utils import six
 from django.utils.translation import ugettext_lazy
 from modelcluster.fields import ParentalKey
-from wagtail.wagtailadmin.edit_handlers import FieldPanel, MultiFieldPanel, FieldRowPanel, InlinePanel, StreamFieldPanel
-from wagtail.wagtailcore import blocks
-from wagtail.wagtailcore.fields import StreamField
-from wagtail.wagtailcore.models import Page as WagtailPage, Orderable
-from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
-from wagtail.wagtailsearch import index
-from wagtail.wagtailsnippets.models import register_snippet
+from wagtail.admin.edit_handlers import FieldPanel, MultiFieldPanel, FieldRowPanel, InlinePanel, StreamFieldPanel
+from wagtail.core import blocks
+from wagtail.core.fields import StreamField
+from wagtail.core.models import Page as WagtailPage, Orderable
+from wagtail.images.edit_handlers import ImageChooserPanel
+from wagtail.search import index
+from wagtail.snippets.models import register_snippet
 
 
 class TestModel(models.Model):

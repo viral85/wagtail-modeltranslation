@@ -12,20 +12,20 @@ from django.db import transaction
 from django.db.models import Q
 from django.http import Http404
 from django.utils.translation import ugettext as _
-from wagtail.wagtailadmin.edit_handlers import FieldPanel, \
+from wagtail.admin.edit_handlers import FieldPanel, \
     MultiFieldPanel, FieldRowPanel
-from wagtail.wagtailadmin.edit_handlers import StreamFieldPanel
-from wagtail.wagtailcore.models import Page, Site
-from wagtail.wagtailcore.url_routing import RouteResult
-from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
-from wagtail.wagtailsearch.index import SearchField
-from wagtail.wagtailsnippets.views.snippets import get_snippet_edit_handler, \
+from wagtail.admin.edit_handlers import StreamFieldPanel
+from wagtail.core.models import Page, Site
+from wagtail.core.url_routing import RouteResult
+from wagtail.images.edit_handlers import ImageChooserPanel
+from wagtail.search.index import SearchField
+from wagtail.snippets.views.snippets import get_snippet_edit_handler, \
     SNIPPET_EDIT_HANDLERS
 from wagtail_modeltranslation.translator import translator, NotRegistered
 from .utils import build_localized_fieldname
 
 try:
-    from wagtail.wagtailadmin.views.pages import get_page_edit_handler, \
+    from wagtail.admin.views.pages import get_page_edit_handler, \
         PAGE_EDIT_HANDLERS
 except ImportError:
     pass
