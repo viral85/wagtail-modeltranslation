@@ -6,8 +6,8 @@ import logging
 import django
 import warnings
 from .patch_wagtailadmin import WagtailTranslator
-from wagtail.wagtailcore.models import Page
-from wagtail.wagtailsnippets.models import get_snippet_models
+from wagtail.core.models import Page
+from wagtail.snippets.models import get_snippet_models
 
 logger = logging.getLogger('wagtail.core')
 

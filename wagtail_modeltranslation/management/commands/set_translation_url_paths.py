@@ -3,7 +3,7 @@
 from django.core.management.base import NoArgsCommand
 from django.conf import settings
 
-from wagtail.wagtailcore.models import Page
+from wagtail.core.models import Page
 
 
 class Command(NoArgsCommand):

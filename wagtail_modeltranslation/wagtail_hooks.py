@@ -9,8 +9,8 @@ from django.conf.urls import url
 from django.http import QueryDict
 from django.http import HttpResponse
 
-from wagtail.wagtailcore import hooks
-from wagtail.wagtailcore.models import Page
+from wagtail.core import hooks
+from wagtail.core.models import Page
 
 
 @hooks.register('insert_editor_js')

@@ -3,7 +3,7 @@ from django import VERSION
 from django import forms
 from django.core.exceptions import ImproperlyConfigured
 from django.db.models import fields
-from wagtail.wagtailcore.fields import StreamField
+from wagtail.core.fields import StreamField
 from django.utils import six
 
 from wagtail_modeltranslation import settings as mt_settings

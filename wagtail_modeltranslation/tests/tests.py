@@ -512,7 +512,7 @@ class WagtailModeltranslationTest(ModeltranslationTestBase):
         super(WagtailModeltranslationTest, cls).setUpClass()
 
         # Delete the default wagtail pages from db
-        from wagtail.wagtailcore.models import Page
+        from wagtail.core.models import Page
         Page.objects.delete()
 
     def test_page_fields(self):
@@ -595,7 +595,7 @@ class WagtailModeltranslationTest(ModeltranslationTestBase):
 
         self.assertEquals(len(child_block), 1)
 
-        from wagtail.wagtailcore.blocks import CharBlock
+        from wagtail.core.blocks import CharBlock
         self.assertEquals(child_block[0][0], 'text')
         self.assertIsInstance(child_block[0][1], CharBlock)
 
@@ -700,7 +700,7 @@ class WagtailModeltranslationTest(ModeltranslationTestBase):
         self.assertItemsEqual(inline_model_fields, related_formset_form.base_fields.keys())
 
     def test_duplicate_slug(self):
-        from wagtail.wagtailcore.models import Site
+        from wagtail.core.models import Site
         # Create a test Site with a root page
         root = models.TestRootPage(title='title', depth=1, path='0001', slug_en='slug_en', slug_de='slug_de')
         root.save()

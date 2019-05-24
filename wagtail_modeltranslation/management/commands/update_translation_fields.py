@@ -8,7 +8,7 @@ from wagtail_modeltranslation.settings import DEFAULT_LANGUAGE
 from wagtail_modeltranslation.translator import translator
 from wagtail_modeltranslation.utils import build_localized_fieldname
 
-from wagtail.wagtailcore.models import Page
+from wagtail.core.models import Page
 
 
 class Command(NoArgsCommand):
